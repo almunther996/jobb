@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Theme -->
+    <color name="colorPrimary">#2A3EB1</color>
+    <color name="colorPrimaryVariant">#1A2A8C</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Accent/Secondary -->
+    <color name="colorSecondary">#F9A825</color>
+    <color name="colorSecondaryVariant">#C17900</color>
+
+    <!-- Backgrounds and Surfaces -->
+    <color name="colorBackground">#F4F6FA</color>
+    <color name="colorSurface">#FFFFFF</color>
+
+    <!-- Text & Icon Colors -->
+    <color name="colorOnSurface">#222222</color>
+    <color name="colorDisabled">#BDBDBD</color>
+</resources>

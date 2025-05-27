@@ -1,0 +1,9 @@
+<resources>
+    <!-- Toolbar Title Style -->
+    <style name="ToolbarTitleStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item> <!-- Customize title size -->
+        <item name="android:textStyle">bold</item> <!-- Optional: bold style -->
+        <item name="android:textColor">@android:color/white</item> <!-- Title color -->
+    </style>
+</resources>
+
