@@ -102,9 +102,9 @@ public class FileAdapter extends RecyclerView.Adapter<FileAdapter.FileViewHolder
                 openFile(file, holder);
                 return true;
 
-//            } else if (itemId == R.id.menu_share) {
-//                shareFile(file);
-//                return true;
+            } else if (itemId == R.id.menu_share) {
+                shareFile(file);
+                return true;
 //            } else if (itemId == R.id.menu_save) {
 //                saveFileToExternal(file);
 //                return true;
@@ -257,18 +257,18 @@ public class FileAdapter extends RecyclerView.Adapter<FileAdapter.FileViewHolder
 
 
 
-//    private void shareFile(File file) {
-//        try {
-//            Uri uri = FileProvider.getUriForFile(context, context.getPackageName() + ".provider", file);
-//            Intent shareIntent = new Intent(Intent.ACTION_SEND);
-//            shareIntent.setType("*/*");
-//            shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
-//            shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-//            context.startActivity(Intent.createChooser(shareIntent, "Share File"));
-//        } catch (Exception e) {
-//            Toast.makeText(context, "Unable to share file", Toast.LENGTH_SHORT).show();
-//        }
-//    }
+    private void shareFile(File file) {
+        try {
+            Uri uri = FileProvider.getUriForFile(context, context.getPackageName() + ".provider", file);
+            Intent shareIntent = new Intent(Intent.ACTION_SEND);
+            shareIntent.setType("*/*");
+            shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
+            shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            context.startActivity(Intent.createChooser(shareIntent, "Share File"));
+        } catch (Exception e) {
+            Toast.makeText(context, "Unable to share file", Toast.LENGTH_SHORT).show();
+        }
+    }
 
 //    private void saveFileToExternal(File file) {
 //        Toast.makeText(context, "Save not implemented yet", Toast.LENGTH_SHORT).show();
