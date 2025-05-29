@@ -171,17 +171,17 @@ public class SecureContainerActivity extends AppCompatActivity {
         return extension != null ? extension : "bin"; // fallback
     }
 
-    private String getOriginalExtension(String fileName) {
-        // Example: enc_1716633091234.mp4.bin
-        if (fileName.endsWith(".bin")) {
-            int secondDot = fileName.lastIndexOf('.', fileName.lastIndexOf('.') - 1);
-            int lastDot = fileName.lastIndexOf('.');
-            if (secondDot != -1 && lastDot > secondDot) {
-                return fileName.substring(secondDot + 1, lastDot); // e.g., "mp4"
-            }
-        }
-        return "bin"; // fallback if structure doesn't match
-    }
+//    private String getOriginalExtension(String fileName) {
+//        // Example: enc_1716633091234.mp4.bin
+//        if (fileName.endsWith(".bin")) {
+//            int secondDot = fileName.lastIndexOf('.', fileName.lastIndexOf('.') - 1);
+//            int lastDot = fileName.lastIndexOf('.');
+//            if (secondDot != -1 && lastDot > secondDot) {
+//                return fileName.substring(secondDot + 1, lastDot); // e.g., "mp4"
+//            }
+//        }
+//        return "bin"; // fallback if structure doesn't match
+//    }
 
 
 

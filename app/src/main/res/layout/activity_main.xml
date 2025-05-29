@@ -33,7 +33,7 @@ tools:context=".MainActivity">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Welcome Back"
+            android:text="Mobile secure storage"
             android:textSize="26sp"
             android:textStyle="bold"
             android:textColor="#222222"
